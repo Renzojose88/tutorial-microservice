@@ -1,0 +1,15 @@
+spring:
+  data:
+    mongodb:
+      uri: ${URL_CONNECTION_TEST}
+      option:
+        socket:
+          connectTimeout: 10000
+          readTimeout: 5000
+        pool:
+          maxPoolSize: 80
+          minPoolSize: 10
+          maxWaitTime: 10000
+          maxConnectionLifeTime: 600000
+          maxConnectionIdleTime: 60000
+          database: myTutorial
